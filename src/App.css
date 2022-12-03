@@ -1,60 +1,6 @@
 
 .App{
   width: 100vw;
-  height: 100vh;
-  background-color: grey;
-  
+  height: 100vh;  
 }
 
-.mainContiner{
-  width: 70%;
-  height: 100%;
-  display: grid;
-  grid-template-rows: 15% 15% 70%;
-  margin: auto;
-}
-
-.mainContiner :first-child{
-  margin: auto;
-  display: grid;
- grid-template-columns: auto auto;
-}
-
-.mainContiner :nth-child(2){
-  margin: auto;
-  display: grid;
- grid-template-columns: auto auto;
-}
-.mainContiner :nth-child(2) input{
-  width: 500px;
-  border-radius: 5px;
-  
-}
-
-
-.imageDisplay{
-  display: grid;
-  grid-template-columns: 33.33% 33.33% 33.33%;
-}
-
-.hoveroverme div{
-visibility: hidden;
-width:15%;
-height:15%;
-opacity:1;
-position:absolute;
-background:white;
-border-radius: 10px;
-margin: auto;
-color:black;
-text-Align:"center";
-box-shadow: 2px 1px 2px 1px;
-}
-
-.hoveroverme:hover img{
-  opacity: 0.5;
-}
-
-.hoveroverme:hover div{
-  visibility: visible;
-}
