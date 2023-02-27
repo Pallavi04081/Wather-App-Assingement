@@ -1,35 +1,19 @@
 import './App.css';
-import {useState,useEffect} from 'react'
-import axios from 'axios';
-import {Scrollbars} from 'react-custom-scrollbars'
-import Home from './Component/HomeCompnent/Homepage';
-import Login from './Component/RegistationComponet/Login';
-import Registation from './Component/RegistationComponet/Registation';
-import {BrowserRouter,Route,Routes,Outlet} from 'react-router-dom'
+import {useState,useEffect} from 'react';
+import Home from './Component/Home';
+
 
 function App() {
  
-  const PrivateRout = (auth)=>{
-      return auth?
-      <>
-      <Outlet/>
-      </>:
-      <>
-      <Login/>
-      </>
-  }
-
-  const [auth,setAuth] = useState(false)
-
+  //https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
   return (
     <div className="App">
-     <BrowserRouter>
+     {/* <BrowserRouter>
      <Routes>
-      <Route path="/login" element={<Login auth={setAuth}/>}/>
-      <Route path="/registation" element={<Registation/>}/>
-      <Route path="/" element={<Home/>}/>
+      </Route>
      </Routes>
-     </BrowserRouter>
+     </BrowserRouter> */}
+     <Home/>
     </div>
   );
 }
